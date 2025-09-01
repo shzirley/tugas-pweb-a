@@ -1,32 +1,29 @@
+/* Warna dasar */
 body {
   margin: 0;
-  padding: 0;
-  background: #eee9e3;
   font-family: 'Open Sans', sans-serif;
+  background-color: #eee9e3;
   color: #333;
 }
 
+/* Layout utama */
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
-  padding: 40px 60px;
+  padding: 40px;
   gap: 60px;
 }
 
+/* Bagian kiri */
 .left {
-  flex: 1;
-  max-width: 55%;
-}
-
-.right {
-  flex: 0.8;
-  display: flex;
-  align-items: flex-start;
+  max-width: 500px;
 }
 
 .photo {
-  width: 230px;
+  width: 280px;
+  border-radius: 12px;
+  display: block;
   margin-bottom: 20px;
 }
 
@@ -35,57 +32,59 @@ body {
   font-size: 145px;
   font-weight: bold;
   color: #4a5692;
-  line-height: 1;
-  margin: 10px 0 20px;
+  line-height: 0.9;
+  margin: 0 0 20px 0;
 }
 
 .name {
   font-size: 15px;
   font-weight: bold;
-  font-family: 'Open Sans', sans-serif;
-  margin: 5px 0 15px;
-  color: #4a5692;
+  text-align: center;
+  margin: 10px 0;
 }
 
 .desc {
   font-size: 13px;
   font-weight: bold;
-  line-height: 1.6;
   text-align: justify;
-  max-width: 600px;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+/* Bagian kanan */
+.right {
+  max-width: 350px;
 }
 
 .info-box {
   border: 4px solid #4a5692;
   border-radius: 8px;
-  padding: 25px 30px;
-  background: #eee9e3;
+  padding: 20px;
 }
 
 .info-box h2 {
   font-family: 'Bauhaus 93', sans-serif;
   font-size: 26px;
   text-transform: uppercase;
-  margin: 20px 0 10px;
   color: #4a5692;
+  margin-bottom: 10px;
 }
 
-.info-box p,
-.info-box li,
-.info-box a {
+.info-box ul {
+  margin: 0 0 20px 20px;
+}
+
+.info-box p {
   font-size: 20px;
   font-weight: bold;
-  font-family: 'Open Sans', sans-serif;
-  margin: 6px 0;
-  color: #000;
+  margin: 5px 0 15px 0;
+}
+
+.info-box a {
+  color: #4a5692;
   text-decoration: none;
 }
 
 .info-box a:hover {
-  color: #4a5692;
-}
-
-.info-box ul {
-  margin: 0;
-  padding-left: 20px;
+  text-decoration: underline;
 }
