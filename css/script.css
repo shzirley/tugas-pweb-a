@@ -1,248 +1,70 @@
-/* Import fonts langsung */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Fredoka+One&display=swap');
-
-/* Reset dan base styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    background-color: #eee9e3 !important;
-}
-
-body {
-    background-color: #eee9e3 !important;
-    font-family: 'Open Sans', Arial, sans-serif;
-    color: #333;
-    line-height: 1.4;
-}
-
-.page-container {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    position: relative;
-    background-color: #eee9e3;
-    min-height: 100vh;
-}
-
-/* Decorative elements */
-.pink-blob {
-    position: absolute;
-    top: 50px;
-    left: 20px;
-    width: 160px;
-    height: 200px;
-    background-color: #ff9bb3;
-    border-radius: 80px 80px 20px 80px;
-    opacity: 0.8;
-    z-index: 1;
-}
-
-.paperclip {
-    position: absolute;
-    top: 30px;
-    left: 140px;
-    width: 70px;
-    height: 20px;
-    background-color: #ff6b9d;
-    border-radius: 25px;
-    z-index: 3;
-}
-
-.paperclip::after {
-    content: '';
-    position: absolute;
-    top: 3px;
-    left: 8px;
-    width: 54px;
-    height: 14px;
-    background-color: #ff6b9d;
-    border-radius: 20px;
-    border: 2px solid #eee9e3;
-}
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Diri - Angela Vania Sugiyono</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="script.css">
+</head>
+<body style="background-color: #eee9e3; margin: 0; padding: 0;">
+    <div class="page-container">
+        <!-- Pink decorative shape -->
+        <div class="pink-blob"></div>
+        
+        <!-- Pink paperclip -->
+        <div class="paperclip"></div>
+        
 
 
+        <div class="content-wrapper">
+            <!-- Left side - Photo -->
+            <div class="photo-section">
+                <div class="photo-frame">
+                    <img src="https://github.com/shzirley/tugas-2-pweb-a/blob/main/fotoku.png?raw=true" alt="Angela Vania Sugiyono" class="profile-pic">
+                </div>
+            </div>
 
-/* Main layout */
-.content-wrapper {
-    display: flex;
-    gap: 40px;
-    position: relative;
-    z-index: 2;
-    margin-top: 20px;
-}
+            <!-- Right side - Content -->
+            <div class="text-section">
+                <div class="header-area">
+                    <h1 class="big-title">Profil<br>Diri</h1>
+                    <p class="name-text">Angela Vania Sugiyono</p>
+                    <div class="blue-line"></div>
+                </div>
 
-.photo-section {
-    flex: 0 0 200px;
-}
+                <div class="description-area">
+                    <p class="desc-text">I am passionate about research and technology, always eager to explore innovations and expand my knowledge. My interest lies in applying technology to industry while maintaining balance with the environment. Currently, I am focused on developing impact-focused applications. I have been driven to pursue sustainable solutions that connect industrial progress with ecological harmony.</p>
+                </div>
 
-.photo-frame {
-    width: 180px;
-    height: 240px;
-    margin-left: 20px;
-    margin-top: 20px;
-    position: relative;
-    z-index: 3;
-}
+                <div class="info-cards">
+                    <div class="card">
+                        <h3 class="card-title">HOBBIES</h3>
+                        <div class="card-content">
+                            • Cooking,<br>
+                            • Listening to music,<br>
+                            • Learn something new
+                        </div>
+                    </div>
 
-.profile-pic {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
+                    <div class="card">
+                        <h3 class="card-title">EDUCATIONAL BACKGROUND</h3>
+                        <div class="card-content">
+                            • 2 States Senior High School Surakarta<br>
+                            • Sepuluh Nopember Institute of Technology
+                        </div>
+                    </div>
 
-.text-section {
-    flex: 1;
-    padding-top: 40px;
-}
-
-/* Header area */
-.header-area {
-    margin-bottom: 25px;
-}
-
-.big-title {
-    font-family: 'Fredoka One', cursive;
-    font-size: 120px;
-    font-weight: bold;
-    color: #4a5692;
-    line-height: 0.9;
-    margin-bottom: 10px;
-    letter-spacing: -2px;
-}
-
-.name-text {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    color: #4a5692;
-    margin-bottom: 15px;
-}
-
-.blue-line {
-    width: 100%;
-    height: 4px;
-    background-color: #4a5692;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-/* Description */
-.description-area {
-    margin-bottom: 30px;
-}
-
-.desc-text {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-    font-weight: bold;
-    color: #333;
-    line-height: 1.5;
-    text-align: justify;
-    max-width: 450px;
-}
-
-/* Info cards */
-.info-cards {
-    display: flex;
-    gap: 25px;
-    flex-wrap: wrap;
-}
-
-.card {
-    background-color: white;
-    border: 2px solid #4a5692;
-    border-radius: 8px;
-    padding: 18px;
-    flex: 1;
-    min-width: 200px;
-    box-shadow: 0 2px 8px rgba(74, 86, 146, 0.1);
-}
-
-.card-title {
-    font-family: 'Fredoka One', cursive;
-    font-size: 22px;
-    font-weight: bold;
-    color: #4a5692;
-    margin-bottom: 12px;
-    letter-spacing: 0.5px;
-}
-
-.card-content {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-    line-height: 1.4;
-}
-
-/* Links */
-a {
-    transition: color 0.2s ease;
-}
-
-a:hover {
-    color: #4a5692 !important;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .page-container {
-        padding: 20px 15px;
-    }
-    
-    .content-wrapper {
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    .photo-section {
-        text-align: center;
-    }
-    
-    .photo-frame {
-        margin: 0 auto;
-    }
-    
-    .text-section {
-        padding-top: 10px;
-    }
-    
-    .big-title {
-        font-size: 70px;
-    }
-    
-    .info-cards {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .card {
-        min-width: auto;
-    }
-    
-    .pink-blob,
-    .paperclip {
-        display: none;
-    }
-}
-
-@media (max-width: 480px) {
-    .big-title {
-        font-size: 50px;
-    }
-    
-    .card-title {
-        font-size: 18px;
-    }
-    
-    .card-content {
-        font-size: 14px;
-    }
-}
+                    <div class="card">
+                        <h3 class="card-title">CONTACT</h3>
+                        <div class="card-content">
+                            <a href="mailto:angelasugiyono95@gmail.com" style="color: #333; text-decoration: none;">angelasugiyono95@gmail.com</a><br>
+                            <a href="https://www.instagram.com/shzirley/" target="_blank" style="color: #333; text-decoration: none;">@shzirley</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
