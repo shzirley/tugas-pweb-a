@@ -232,12 +232,12 @@ Tugas ini melatih mahasiswa untuk bisa kenal lebih dalam mengenai HTML dan CSS, 
 
 ---
 
-# LAPORAN TUGAS PEMROGRAMAN WEBSITE PERTEMUAN 2
+# LAPORAN TUGAS PEMROGRAMAN WEBSITE PERTEMUAN 3
 
 ## Deskripsi Latihan
 Pada pertemuan ke-3 kali ini, kami belajar pembuatan table, frame, dan juga form menggunakan HTML
 
-Untuk melihat hasil dapat dilihat di bawah berikut.
+Untuk melihat hasil dapat dilihat di bawah berikut:
 
 ### a. table
 ![Table](https://github.com/shzirley/tugas-pweb-a/blob/main/ss_table.png?raw=true)
