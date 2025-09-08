@@ -239,11 +239,11 @@ Pada pertemuan ke-3 kali ini, kami belajar pembuatan table, frame, dan juga form
 
 Untuk melihat hasil dapat dilihat di bawah berikut.
 
-a. table
+### a. table
 ![Table](https://github.com/shzirley/tugas-pweb-a/blob/main/ss_table.png?raw=true)
 
-b. frame
+### b. frame
 ![frame](https://github.com/shzirley/tugas-pweb-a/blob/main/ss_frame.png?raw=true)
 
-c. form
+### c. form
 ![form](https://github.com/shzirley/tugas-pweb-a/blob/main/ss_form.png?raw=true)
