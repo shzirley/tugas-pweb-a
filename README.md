@@ -1,13 +1,13 @@
-# LAPORAN TUGAS PEMROGRAMAN WEBSITE PERTEMUAN 2
-
-## Identitas
+# Identitas
 - **Nama**: Angela Vania Sugiyono
 - **NRP**: 5025241226
 - **Kelas**: PWEB A
 
 ---
 
-## Deskripsi Website
+# LAPORAN TUGAS PEMROGRAMAN WEBSITE PERTEMUAN 2
+
+## Deskripsi Latihan
 
 Website profil personal ini dibuat sebagai bentuk ke-10, yaitu Tugas Profil dengan Semua Elemen yang berisikan:
 - Judul profil (heading)
@@ -229,3 +229,21 @@ Website ini di-deploy menggunakan **GitHub Pages** dengan:
 
 ## Kesimpulan
 Tugas ini melatih mahasiswa untuk bisa kenal lebih dalam mengenai HTML dan CSS, yaitu layouting dengan berbagai teknik seperti CSS Grid untuk mengatur daftar hobi, Flexbox untuk alignment media sosial, responsive design dengan media queries, serta styling components seperti form, table, dan button. Melalui pembuatan website profil ini, mahasiswa dapat memahami konsep semantic HTML, CSS positioning, dan best practices dalam web development yang dapat diterapkan untuk proyek-proyek web development selanjutnya.
+
+---
+
+# LAPORAN TUGAS PEMROGRAMAN WEBSITE PERTEMUAN 2
+
+## Deskripsi Latihan
+Pada pertemuan ke-3 kali ini, kami belajar pembuatan table, frame, dan juga form menggunakan HTML
+
+Untuk melihat hasil dapat dilihat di bawah berikut.
+
+a. table
+![Table](https://github.com/shzirley/tugas-pweb-a/blob/main/ss_table.png?raw=true)
+
+b. frame
+![frame](https://github.com/shzirley/tugas-pweb-a/blob/main/ss_frame.png?raw=true)
+
+c. form
+![form](https://github.com/shzirley/tugas-pweb-a/blob/main/ss_form.png?raw=true)
