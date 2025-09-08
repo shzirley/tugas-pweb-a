@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Layout Flexbox</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .wrap {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background: #4da6ff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Menu */
+        .menu {
+            background: #80c1ff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .badan {
+            display: flex;
+            flex: 1;
+        }
+
+        .sidebar {
+            background: #99e6ff;
+            width: 25%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .content {
+            background: #b3f0ff;
+            flex: 1; 
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .footer {
+            background: #4da6ff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            Header
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">PHP</a></li>
+                <li><a href="#">JS</a></li>
+            </ul>
+        </div>
+        <div class="badan">
+            <div class="sidebar">
+                Sidebar
+            </div>
+            <div class="content">
+                Content
+            </div>
+        </div>
+        <div class="footer">
+            Footer
+        </div>
+    </div>
+</body>
+</html>
