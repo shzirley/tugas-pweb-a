@@ -268,10 +268,10 @@ Pada pertemuan ke-4 ini, kami belajar bagaimana cara memperindah web menggunakan
 Untuk melihat hasul dapat dilihat di bwah berikut:
 
 ### Dokumentasi page 1
-![page1](url)
+![page1](https://github.com/shzirley/tugas-pweb-a/blob/main/pertemuan4/img/page1.jpg?raw=true)
 
 ### Dokumentasi page 2
-![page2](url)
+![page2](https://github.com/shzirley/tugas-pweb-a/blob/main/pertemuan4/img/page2.jpg?raw=true)
 
 ### Link Web
 Untuk melihat hasil dapat dilihat berikut:
