@@ -257,3 +257,24 @@ Melalui latihan ini, mahasiswa dapat memahami dan mempraktikkan tiga hal penting
 3. Formulir (Form) → pembuatan form dengan berbagai input (teks, email, select, password, tombol) melatih mahasiswa membuat antarmuka interaktif yang dapat digunakan untuk mengumpulkan data pengguna.
 
 Dengan menggabungkan ketiga komponen tersebut, mahasiswa tidak hanya belajar menulis kode HTML, tetapi juga memahami konsep perancangan antarmuka web yang baik, yakni terstruktur, fungsional, dan user-friendly.
+
+---
+
+# LAPORAN TUGAS PEMROGRAMAN WEBSITE PERTEMUAN 4
+
+## Deskripsi Latihan
+Pada pertemuan ke-4 ini, kami belajar bagaimana cara memperindah web menggunakan css
+
+Untuk melihat hasul dapat dilihat di bwah berikut:
+
+### Dokumentasi page 1
+![page1](url)
+
+### Dokumentasi page 2
+![page2](url)
+
+### Link Web
+Untuk melihat hasil dapat dilihat berikut:
+https://shzirley.github.io/tugas-4-pweb-a/
+
+---
