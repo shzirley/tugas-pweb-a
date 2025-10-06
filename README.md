@@ -11,9 +11,6 @@
 Pada pertemuan ke-1 ini, kami belajar typewriting untuk melatih kemampuan mengetik kami.
 Untuk melihat hasil dapat dilihat di bawah berikut:
 
-### Dokumentasi
-![formproduk](https://github.com/shzirley/tugas-pweb-a/blob/main/screenshotpweb/formjenisproduk.jpg?raw=true)
-
 ### Link Web
 Untuk melihat hasil dapat dilihat berikut:
 [https://shzirley.github.io/tugas-5-pweb-a/](https://shzirley.github.io/tugas-1-pweb-a/)
