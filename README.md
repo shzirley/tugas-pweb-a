@@ -265,7 +265,7 @@ Dengan menggabungkan ketiga komponen tersebut, mahasiswa tidak hanya belajar men
 ## Deskripsi Latihan
 Pada pertemuan ke-4 ini, kami belajar bagaimana cara memperindah web menggunakan css
 
-Untuk melihat hasul dapat dilihat di bwah berikut:
+Untuk melihat hasul dapat dilihat di bawah berikut:
 
 ### Dokumentasi page 1
 ![page1](url)
@@ -277,6 +277,9 @@ Untuk melihat hasul dapat dilihat di bwah berikut:
 Untuk melihat hasil dapat dilihat berikut:
 https://shzirley.github.io/tugas-4-pweb-a/
 
+### Link Folder
+Bisa dilihat pada [folder4](pertemuan4/)
+
 ---
 
 # LAPORAN TUGAS PEMROGRAMAN WEBSITE PERTEMUAN 5
@@ -284,7 +287,7 @@ https://shzirley.github.io/tugas-4-pweb-a/
 ## Deskripsi Latihan
 Pada pertemuan ke-5 ini, kami belajar bagaimana perngimpelentasian JS pada form Mahasiswa dan Produk
 
-Untuk melihat hasil dapat dilihat di bwah berikut:
+Untuk melihat hasil dapat dilihat di bawah berikut:
 
 ### Dokumentasi page 1
 ![page1](url)
@@ -295,3 +298,6 @@ Untuk melihat hasil dapat dilihat di bwah berikut:
 ### Link Web
 Untuk melihat hasil dapat dilihat berikut:
 https://shzirley.github.io/tugas-5-pweb-a/
+
+### Link Folder
+Bisa dilihat pada [folder5](pertemuan5/)
