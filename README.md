@@ -5,6 +5,21 @@
 
 ---
 
+# LAPORAN TUGAS PEMROGRAMAN WEBSITE PERTEMUAN 1
+
+## Deskripsi Latihan
+Pada pertemuan ke-1 ini, kami belajar typewriting untuk melatih kemampuan mengetik kami.
+Untuk melihat hasil dapat dilihat di bawah berikut:
+
+### Link Web
+Untuk melihat hasil dapat dilihat berikut:
+[https://shzirley.github.io/tugas-5-pweb-a/](https://shzirley.github.io/tugas-1-pweb-a/)
+
+### Link Folder
+Bisa dilihat pada [folder1](pertemuan1/)
+
+---
+
 # LAPORAN TUGAS PEMROGRAMAN WEBSITE PERTEMUAN 2
 
 ## Deskripsi Latihan
@@ -229,6 +244,13 @@ Website ini di-deploy menggunakan **GitHub Pages** dengan:
 
 ## Kesimpulan
 Tugas ini melatih mahasiswa untuk bisa kenal lebih dalam mengenai HTML dan CSS, yaitu layouting dengan berbagai teknik seperti CSS Grid untuk mengatur daftar hobi, Flexbox untuk alignment media sosial, responsive design dengan media queries, serta styling components seperti form, table, dan button. Melalui pembuatan website profil ini, mahasiswa dapat memahami konsep semantic HTML, CSS positioning, dan best practices dalam web development yang dapat diterapkan untuk proyek-proyek web development selanjutnya.
+
+### Link Web
+Untuk melihat hasil dapat dilihat berikut:
+[!pertemuan2](url)
+
+### Link Folder
+Bisa dilihat pada [folder2](pertemuan2/)
 
 ---
 
