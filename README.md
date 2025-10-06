@@ -23,7 +23,7 @@ Website profil personal ini dibuat sebagai bentuk ke-10, yaitu Tugas Profil deng
 ## Fitur dan Komponen Website
 
 ### 1. Header dan Profil
-![Profil dan Deskripsi](https://github.com/shzirley/tugas-2-pweb-a/blob/main/ss_profil.jpg?raw=true)
+![ss_profil](https://github.com/shzirley/tugas-pweb-a/blob/main/screenshotpweb/ss_profil.jpg?raw=true)
 
 Bagian header menampilkan:
 - **Foto profil** dengan border radius 50% untuk membuat bentuk lingkaran
@@ -57,7 +57,7 @@ Berisi paragraf yang menjelaskan:
 - Visi untuk menciptakan dampak positif
 
 ### 3. Hobi dan Minat
-![Hobi dan Pendidikan](https://github.com/shzirley/tugas-2-pweb-a/blob/main/ss_hobinpendidikan.jpg?raw=true)
+![hobipendidikan](https://github.com/shzirley/tugas-pweb-a/blob/main/screenshotpweb/ss_hobinpendidikan.jpg?raw=true)
 
 **Implementasi Grid Layout:**
 ```css
@@ -110,7 +110,7 @@ Menampilkan informasi pendidikan dalam format tabel dengan:
 ```
 
 ### 5. Form Kontak
-![Form Kontak](https://github.com/shzirley/tugas-2-pweb-a/blob/main/ss_formkontak.jpg?raw=true)
+![medsos](https://github.com/shzirley/tugas-pweb-a/blob/main/screenshotpweb/ss_medsos.jpg?raw=true)
 
 Form kontak interaktif ini dibuat untuk memudahkan pengunjung jika ingin menghubungi saya tanpa membuka banyak aplikasi secara manual. Fitur form kontak sebagai berikut:
 - **Input fields** untuk Nama, Email, Subjek, dan Pesan
@@ -144,7 +144,7 @@ function handleSubmit(event) {
 ```
 
 ### 6. Media Sosial
-![Media Sosial](https://github.com/shzirley/tugas-2-pweb-a/blob/main/ss_medsos.jpg?raw=true)
+![medsos](https://github.com/shzirley/tugas-pweb-a/blob/main/screenshotpweb/ss_medsos.jpg?raw=true)
 
 Links ke platform media sosial dengan:
 - **Button styling** yang konsisten
@@ -240,13 +240,13 @@ Pada pertemuan ke-3 kali ini, kami belajar pembuatan table, frame, dan juga form
 Untuk melihat hasil dapat dilihat di bawah berikut:
 
 ### a. table
-![Table](https://github.com/shzirley/tugas-pweb-a/blob/main/ss_table.png?raw=true)
+![ss_table](https://github.com/shzirley/tugas-pweb-a/blob/main/screenshotpweb/ss_table.png?raw=true)
 
 ### b. frame
-![frame](https://github.com/shzirley/tugas-pweb-a/blob/main/ss_frame.png?raw=true)
+![ss_frame0(https://github.com/shzirley/tugas-pweb-a/blob/main/screenshotpweb/ss_frame.png?raw=true)
 
 ### c. form
-![form](https://github.com/shzirley/tugas-pweb-a/blob/main/ss_form.png?raw=true)
+![ss_form](https://github.com/shzirley/tugas-pweb-a/blob/main/screenshotpweb/ss_form.png?raw=true)
 
 ---
 ## Kesimpulan
@@ -268,10 +268,10 @@ Pada pertemuan ke-4 ini, kami belajar bagaimana cara memperindah web menggunakan
 Untuk melihat hasul dapat dilihat di bawah berikut:
 
 ### Dokumentasi page 1
-![page1](url)
+![edusmart1](https://github.com/shzirley/tugas-pweb-a/blob/main/screenshotpweb/edusmart1.jpg?raw=true)
 
 ### Dokumentasi page 2
-![page2](url)
+![edusmart2](https://github.com/shzirley/tugas-pweb-a/blob/main/screenshotpweb/edusmart2.jpg?raw=true)
 
 ### Link Web
 Untuk melihat hasil dapat dilihat berikut:
@@ -289,11 +289,11 @@ Pada pertemuan ke-5 ini, kami belajar bagaimana perngimpelentasian JS pada form 
 
 Untuk melihat hasil dapat dilihat di bawah berikut:
 
-### Dokumentasi page 1
-![page1](url)
+### Dokumentasi page form produk
+![formproduk](https://github.com/shzirley/tugas-pweb-a/blob/main/screenshotpweb/formjenisproduk.jpg?raw=true)
 
-### Dokumentasi page 2
-![page2](url)
+### Dokumentasi page form mahasiswa
+![formmahasiswa](https://github.com/shzirley/tugas-pweb-a/blob/main/screenshotpweb/formmahasiswa.jpg?raw=true)
 
 ### Link Web
 Untuk melihat hasil dapat dilihat berikut:
