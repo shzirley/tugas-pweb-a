@@ -278,3 +278,20 @@ Untuk melihat hasil dapat dilihat berikut:
 https://shzirley.github.io/tugas-4-pweb-a/
 
 ---
+
+# LAPORAN TUGAS PEMROGRAMAN WEBSITE PERTEMUAN 5
+
+## Deskripsi Latihan
+Pada pertemuan ke-5 ini, kami belajar bagaimana perngimpelentasian JS pada form Mahasiswa dan Produk
+
+Untuk melihat hasil dapat dilihat di bwah berikut:
+
+### Dokumentasi page 1
+![page1](url)
+
+### Dokumentasi page 2
+![page2](url)
+
+### Link Web
+Untuk melihat hasil dapat dilihat berikut:
+https://shzirley.github.io/tugas-5-pweb-a/
