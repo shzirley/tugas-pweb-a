@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Registrasi Mahasiswa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      <h2>Form Registrasi Mahasiswa</h2>
+      <form id="formMahasiswa">
+        <label fore="nama">Nama Mahasiswa</label>
+        <input list="listNama" id = "nama" name="nama" required>
+        <datalist id = "listNama">
+          <option value="Angela Vania Sigma">
+          <option value="Maleka Sigma Abiez">
+          <option value="Jorell Ramos Sinaga">
+          <option value="Jorell Maleka Enji">
+        </datalist>
+        
+        <label for="nrp">NRP:</label>
+        <input list="listNRP" id="nrp" name="NRP" required>
+        <datalist id="listNRP">
+          <option value="5025241226">
+          <option value="5025241202">
+          <option value="5025241189">
+        </datalist>
+
+        <label for="matkul">Mata Kuliah:</label>
+        <input list="listMatkul" id = "matkul" name="matkul" required>
+        <datalist id="listMatkul">
+          <option value="Sistem Basis Data">
+          <option value="Pemrograman Website">
+          <option value="Soto Semarang">
+        </datalist>
+
+        <label for="Dosen">Dosen:</label>
+        <input list="listDosen" id = "dosen" name="dosen" required>
+        <datalist id="listDosen">
+          <option value="Dr. Andi Prasetyo">
+          <option value="Ir. Siti Marlina, M.Kom">
+          <option value="Fajar Nugroho, M.Kom">
+          <option value="Budi, S.Si">
+        </datalist>
+
+        <button type="submit">Daftar</button>
+      </form>
+
+    <div class="nav-link">
+      <a href="produk.html" class="link-btn">Ke Form Produk</a>
+    </div>
+  </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>
+

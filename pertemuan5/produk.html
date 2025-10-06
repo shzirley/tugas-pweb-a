@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Produk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Form Produk</h2>
+        <form id="formProduk">
+
+            <label for="jenisProduk">Jenis Produk:</label>
+            <select id="jenisProduk" name="jenisProduk" required>
+                <option value="" disabled selected>-- Pilih Jenis Produk --</option>
+                <option value="MBG Sehat">MBG Sehat</option>
+                <option value="HP">HP</option>
+                <option value="Laptop">Laptop</option>
+                <option value="SmartWatch">SmartWatch</option>
+            </select>
+
+            <label for="pilihMerk">Pilih Merek:</label>
+            <select id="pilihMerk" name="pilihMerk" required>
+                <option value="" disabled selected>-- Pilih Merek --</option>
+                <option value="IP PROMAKS">IP PROMAKS</option>
+                <option value="LEPTOP MANTUL">LEPTOP MANTUL</option>
+                <option value="SAMSUMG XII">SAMSUMG XII</option>
+                <option value="SmartWatch AIR NUB">SmartWatch AIR NUB</option>
+            </select>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+</body>
+</html>
