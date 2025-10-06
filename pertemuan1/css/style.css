@@ -1,0 +1,85 @@
+/* GENERAL */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #BBDCE5;
+  color: #333;
+}
+
+/* HEADER */
+.header {
+  width: 100%;
+  height: 300px;
+  background-image: url("https://raw.githubusercontent.com/shzirley/tugas-1-pweb-a/main/headerpweba.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .overlay {
+  background: rgba(0, 0, 0, 0.5); /* transparan biar teks kebaca */
+  padding: 20px 40px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  color: #fff;
+  margin: 0;
+}
+
+.header p {
+  color: #ddd;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/* KONTEN */
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: transparent;
+}
+
+/* IMAGE */
+.image {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.image img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* SCROLL REVEAL EFFECT */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .header {
+    height: 200px;
+  }
+  .header h1 {
+    font-size: 1.6rem;
+  }
+  .header p {
+    font-size: 0.9rem;
+  }
+}
