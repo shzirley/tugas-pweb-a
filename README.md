@@ -247,7 +247,7 @@ Tugas ini melatih mahasiswa untuk bisa kenal lebih dalam mengenai HTML dan CSS, 
 
 ### Link Web
 Untuk melihat hasil dapat dilihat berikut:
-[!pertemuan2](url)
+[!pertemuan2](https://shzirley.github.io/tugas-2-pweb-a/pertemuan2.html)
 
 ### Link Folder
 Bisa dilihat pada [folder2](pertemuan2/)
@@ -334,7 +334,7 @@ Pada pertemuan ke-6 ini, kami belajar bagaimana pengimpelentasian bootstrap pada
 Untuk melihat hasil dapat dilihat di bawah berikut:
 
 ### Dokumentasi page form login
-[formlogin](https://github.com/shzirley/tugas-pweb-a/blob/main/screenshotpweb/formlogin.jpg?raw=true)
+![formlogin](https://github.com/shzirley/tugas-pweb-a/blob/main/screenshotpweb/formlogin.jpg?raw=true)
 
 ### Dokumentasi page form registrasi
 ![formregistrasi](https://github.com/shzirley/tugas-pweb-a/blob/main/screenshotpweb/formregistrasi.jpg?raw=true)
