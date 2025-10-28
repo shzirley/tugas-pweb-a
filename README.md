@@ -345,3 +345,25 @@ https://shzirley.github.io/tugas-6-pweb-a/login.html
 
 ### Link Folder
 Bisa dilihat pada [folder6](pertemuan6/)
+
+---
+
+# LAPORAN TUGAS PEMROGRAMAN WEBSITE PERTEMUAN 7
+
+## Deskripsi Latihan
+Pada pertemuan ke-7 ini, kami belajar bagaimana pengimpelentasian ajax dalam form submit without refresh.
+
+Untuk melihat hasil dapat dilihat di bawah berikut:
+
+### Dokumentasi page form login
+![formlogin](https://github.com/shzirley/tugas-pweb-a/blob/main/screenshotpweb/formlogin.jpg?raw=true)
+
+### Dokumentasi page form registrasi
+![formregistrasi](https://github.com/shzirley/tugas-pweb-a/blob/main/screenshotpweb/formregistrasi.jpg?raw=true)
+
+### Link Web
+Untuk melihat hasil dapat dilihat berikut:
+https://shzirley.great-site.net/pertemuan7/
+
+### Link Folder
+Bisa dilihat pada [folder7](pertemuan7/)
