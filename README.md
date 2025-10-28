@@ -356,7 +356,7 @@ Pada pertemuan ke-7 ini, kami belajar bagaimana pengimpelentasian ajax dalam for
 Untuk melihat hasil dapat dilihat di bawah berikut:
 
 ### Dokumentasi page form login
-![formlogin](https://github.com/shzirley/tugas-pweb-a/blob/main/screenshotpweb/formlogin.jpg?raw=true)
+![ajax](https://github.com/shzirley/tugas-pweb-a/blob/main/screenshotpweb/ajax1.jpg?raw=true)
 
 ### Dokumentasi page form registrasi
 ![formregistrasi](https://github.com/shzirley/tugas-pweb-a/blob/main/screenshotpweb/formregistrasi.jpg?raw=true)
