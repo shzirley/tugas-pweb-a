@@ -358,9 +358,6 @@ Untuk melihat hasil dapat dilihat di bawah berikut:
 ### Dokumentasi page form login
 ![ajax](https://github.com/shzirley/tugas-pweb-a/blob/main/screenshotpweb/ajax1.jpg?raw=true)
 
-### Dokumentasi page form registrasi
-![formregistrasi](https://github.com/shzirley/tugas-pweb-a/blob/main/screenshotpweb/formregistrasi.jpg?raw=true)
-
 ### Link Web
 Untuk melihat hasil dapat dilihat berikut:
 https://shzirley.great-site.net/pertemuan7/
