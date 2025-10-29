@@ -345,3 +345,66 @@ https://shzirley.github.io/tugas-6-pweb-a/login.html
 
 ### Link Folder
 Bisa dilihat pada [folder6](pertemuan6/)
+
+--- 
+
+# LAPORAN TUGAS PEMROGRAMAN WEBSITE PERTEMUAN 7
+
+## Deskripsi Latihan
+
+Pada pertemuan ke-7 ini, kami belajar bagaimana pengimplementasian **Asynchronous JavaScript and XML (AJAX)** dalam proses pengiriman *form* (*submit form*) **tanpa memuat ulang halaman** (*without refresh*). Implementasi ini memanfaatkan kombinasi **jQuery** di sisi klien (*client-side*) untuk berkomunikasi secara asinkron dengan skrip **PHP** di sisi server (*server-side*). Seluruh proyek ini kemudian di-*hosting* secara *online* agar dapat didemonstrasikan.
+
+-----
+
+## Analisis Kode dan Implementasi Fungsi Utama
+
+Tugas ini berhasil diimplementasikan menggunakan tiga file utama yang saling berinteraksi: `index.html`, `style.css`, dan `process.php`.
+
+### 1\. `index.html` (Antarmuka dan Mesin AJAX)
+
+| Komponen | Fungsi Utama | Keterangan Implementasi |
+| :--- | :--- | :--- |
+| **HTML Form** | Menampilkan elemen input (`Name`, `Email`, `Message`) dan tombol *submit*. | Menggunakan `id="contactForm"` yang menjadi target JavaScript. Atribut `action` form dikosongkan karena pengiriman dikendalikan oleh AJAX. |
+| **Validasi Klien (jQuery)** | Melakukan pemeriksaan awal pada input (kolom kosong, format email) sebelum data dikirim ke server. | Menggunakan fungsi `if(name === '') { ... }` dan `if(!email.match(emailPattern)) { ... }` untuk validasi instan. |
+| **Mekanisme AJAX** | Mengirim data formulir ke server secara asinkron dan menangani respons. | Fungsi `e.preventDefault()` mencegah *refresh*. Objek `$.ajax()` mengirim data formulir (`$(this).serialize()`) ke **`process.php`** menggunakan metode **POST**. |
+| **Status Umpan Balik** | Memberikan indikator kepada pengguna selama proses pengiriman. | Fungsi `beforeSend` menampilkan gambar *loader*. Fungsi `success` menerima respons dari PHP dan menampilkannya di `div class="message_box"`. |
+
+### 2\. `process.php` (Logika Server)
+
+| Baris Kode | Fungsi Utama | Keterangan Implementasi |
+| :--- | :--- | :--- |
+| <code>if ($_SERVER["REQUEST_METHOD"] == "POST")</code> | **Pemeriksaan Metode** | Memastikan skrip hanya memproses permintaan yang datang dari metode HTTP POST (sesuai dengan permintaan AJAX). |
+| <code>trim($_POST['name'])</code> | **Pengambilan dan Sanitasi Data** | Mengambil data yang dikirim oleh formulir AJAX dan membersihkan spasi putih di awal/akhir input. |
+| <code>if ($name == '' &#124;&#124; ...)</code> | **Validasi Server** | Melakukan pemeriksaan wajib terhadap data untuk mencegah data kosong masuk ke pemrosesan lebih lanjut. |
+| <code>filter_var($email, FILTER_VALIDATE_EMAIL)</code> | **Validasi Format Email** | Menggunakan fungsi bawaan PHP yang kuat untuk memverifikasi keabsahan format alamat email. |
+| <code>echo "&lt;span style='color:green;'&gt;...&lt;/span&gt;";</code> | **Pencetakan Respons** | Mencetak string HTML (pesan sukses atau error) yang akan menjadi balasan (<code>data</code>) yang diterima dan ditampilkan oleh JavaScript. |
+
+### 3\. `style.css` (Gaya Tampilan)
+
+File ini berisi *style sheet* yang mengatur desain agar *form* terlihat modern dan responsif, termasuk penataan posisi form di tengah layar dan pemberian gaya visual pada pesan status (`.success` dan `.error`).
+
+-----
+
+## Dokumentasi dan Hasil Demo Online
+Seluruh file telah diunggah dan di-*hosting* secara *online* menggunakan platform **GreatSite**, memungkinkan demonstrasi fungsionalitas AJAX secara *live*.
+
+### Dokumentasi Tampilan Form
+![ajax](https://github.com/shzirley/tugas-pweb-a/blob/main/screenshotpweb/ajax1.jpg?raw=true)
+
+### Link Web Demo
+Untuk melihat hasil implementasi secara langsung:
+[https://shzirley.great-site.net/pertemuan7/](https://shzirley.great-site.net/pertemuan7/)
+
+### Link Folder Proyek
+Struktur file dalam direktori *hosting* dapat dilihat pada:
+[folder7](https://www.google.com/search?q=pertemuan7/)
+
+-----
+
+## Kesimpulan
+
+Latihan ini berhasil mengimplementasikan AJAX untuk *form submission*, memberikan **pengalaman pengguna (UX) yang ditingkatkan**.
+
+1.  **Pengalaman Non-Blocking:** Dengan AJAX, pengguna tidak perlu menunggu halaman dimuat ulang. Data formulir dikirim di latar belakang, memberikan umpan balik yang cepat dan efisien.
+2.  **Efisiensi Sumber Daya:** Hanya data yang relevan yang dipertukarkan antara klien dan server, bukan seluruh halaman HTML.
+3.  **Keamanan Berlapis:** Validasi dilakukan baik di sisi klien (untuk kecepatan) maupun di sisi server (`process.php`) sebagai langkah keamanan penting untuk memastikan data yang diproses selalu valid.
