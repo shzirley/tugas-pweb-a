@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peserta Terdaftar - SMK MBG SEHAT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <div class="logo-icon">SMK</div>
+                <div class="logo-text">
+                    <h1>SMK MBG SEHAT</h1>
+                    <p>Planet Bukit Sukolilo, Surabaya, Jawa Tengah</p>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <a href="index.html" class="btn btn-back">← Kembali ke Beranda</a>
+            
+            <div class="form-header">
+                <h2>Daftar Peserta Terdaftar</h2>
+                <p>Data calon siswa baru yang telah mendaftar</p>
+            </div>
+
+            <div id="alertBox" class="alert"></div>
+
+            <div class="table-controls">
+                <a href="daftar_baru.html" class="btn btn-primary">+ Tambah Pendaftar Baru</a>
+                
+                <div class="filter-group">
+                    <label for="sortBy">Urutkan:</label>
+                    <select id="sortBy">
+                        <option value="tanggal_daftar_desc">Tanggal Terbaru</option>
+                        <option value="tanggal_daftar_asc">Tanggal Terlama</option>
+                        <option value="nama_asc">Nama A-Z</option>
+                        <option value="nama_desc">Nama Z-A</option>
+                        <option value="nilai_desc">Nilai Tertinggi</option>
+                        <option value="nilai_asc">Nilai Terendah</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama</th>
+                            <th>Tanggal Daftar</th>
+                            <th>Jenis Kelamin</th>
+                            <th>Jurusan</th>
+                            <th>Nilai</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr>
+                            <td colspan="7" style="text-align: center; padding: 40px;">
+                                Memuat data...
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 SMK MBG SEHAT. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Modal Edit -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Edit Data Peserta</h3>
+                <button class="close-modal" onclick="closeEditModal()">&times;</button>
+            </div>
+            
+            <form id="formEdit">
+                <input type="hidden" id="editId" name="id">
+                
+                <div class="form-group">
+                    <label for="editNamaLengkap">Nama Lengkap *</label>
+                    <input type="text" id="editNamaLengkap" name="namaLengkap">
+                </div>
+
+                <div class="form-group">
+                    <label for="editEmail">Email *</label>
+                    <input type="email" id="editEmail" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="editTanggalLahir">Tanggal Lahir *</label>
+                    <input type="date" id="editTanggalLahir" name="tanggalLahir">
+                </div>
+
+                <div class="form-group">
+                    <label>Jenis Kelamin *</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="editLakiLaki" name="jenisKelamin" value="Laki-laki">
+                            <label for="editLakiLaki">Laki-laki</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="editPerempuan" name="jenisKelamin" value="Perempuan">
+                            <label for="editPerempuan">Perempuan</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="editAgama">Agama *</label>
+                    <select id="editAgama" name="agama">
+                        <option value="">-- Pilih Agama --</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Katolik">Katolik</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Buddha">Buddha</option>
+                        <option value="Konghucu">Konghucu</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="editAlamat">Alamat *</label>
+                    <textarea id="editAlamat" name="alamat"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="editJurusan">Jurusan *</label>
+                    <select id="editJurusan" name="jurusan">
+                        <option value="">-- Pilih Jurusan --</option>
+                        <option value="Tata Boga">Tata Boga</option>
+                        <option value="Teknik Komputer dan Jaringan (TKJ)">Teknik Komputer dan Jaringan (TKJ)</option>
+                        <option value="Rekayasa Perangkat Lunak (RPL)">Rekayasa Perangkat Lunak (RPL)</option>
+                        <option value="Desain Komunikasi Visual (DKV)">Desain Komunikasi Visual (DKV)</option>
+                        <option value="Akuntansi">Akuntansi</option>
+                        <option value="Otomotif">Otomotif</option>
+                        <option value="Multimedia">Multimedia</option>
+                        <option value="Perhotelan">Perhotelan</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="editNilaiRapor">Nilai Rapor (0.00 - 100.00) *</label>
+                    <input type="number" id="editNilaiRapor" name="nilaiRapor" step="0.01" min="0" max="100">
+                </div>
+
+                <button type="submit" class="btn btn-success">Simpan Perubahan</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="peserta.js"></script>
+</body>
+</html>
