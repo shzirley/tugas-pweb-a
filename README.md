@@ -393,7 +393,7 @@ Seluruh file telah diunggah dan di-*hosting* secara *online* menggunakan platfor
 
 ### Link Web Demo
 Untuk melihat hasil implementasi secara langsung:
-[https://shzirley.great-site.net/pertemuan7/](https://shzirley.great-site.net/pertemuan7/)
+[Klik Disini](https://shzirley.great-site.net/pertemuan7/)
 
 ### Link Folder Proyek
 Struktur file dalam direktori *hosting* dapat dilihat pada:
@@ -662,7 +662,7 @@ Untuk melihat hasil implementasi secara langsung:
 
 ### Link Folder Proyek
 Struktur file dalam direktori *hosting* dapat dilihat pada:
-[folder7](https://www.google.com/search?q=pertemuan9/)
+[folder9](https://www.google.com/search?q=pertemuan9/)
 
 
 ---
