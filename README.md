@@ -13,7 +13,7 @@ Untuk melihat hasil dapat dilihat di bawah berikut:
 
 ### Link Web
 Untuk melihat hasil dapat dilihat berikut:
-[https://shzirley.github.io/tugas-5-pweb-a/](https://shzirley.github.io/tugas-1-pweb-a/)
+[Klik Disini/](https://shzirley.github.io/tugas-1-pweb-a/)
 
 ### Link Folder
 Bisa dilihat pada [folder1](pertemuan1/)
@@ -552,17 +552,6 @@ Pada pertemuan ke-9 ini, kami belajar bagaimana membangun **Sistem Informasi Man
 | `tanggal_daftar DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP` | **Auto Timestamp** | Field datetime yang otomatis diisi dengan waktu saat insert, menggunakan fungsi MySQL `CURRENT_TIMESTAMP()`. |
 | `INDEX idx_email (email)` | **Index Creation** | Membuat index pada kolom email untuk mempercepat query pencarian dan validasi unique, meningkatkan performance. |
 | `ENGINE=InnoDB DEFAULT CHARSET=utf8mb4` | **Storage Engine** | Menggunakan InnoDB untuk ACID compliance dan foreign key support, charset utf8mb4 untuk full Unicode support termasuk emoji. |
-
-### 13. `README.md` (Dokumentasi Lengkap)
-
-| Section | Fungsi Utama | Keterangan Implementasi |
-|:--------|:-------------|:------------------------|
-| **Deskripsi Project** | Overview fitur dan teknologi. | Penjelasan lengkap tentang sistem, fitur utama dengan checklist, dan stack teknologi yang digunakan (HTML5, CSS3, Vanilla JS, PHP 7.4+, MySQL 5.7+). |
-| **Struktur File** | Tree diagram organisasi file. | ASCII tree yang menampilkan hierarki folder dan file, memudahkan developer memahami arsitektur project. |
-| **Panduan Instalasi** | Step-by-step setup instructions. | 5 langkah lengkap: (1) Persiapan environment, (2) Setup database dengan SQL script, (3) Konfigurasi `config.php`, (4) Deploy ke web server, (5) Akses aplikasi di browser. |
-| **Cara Penggunaan** | User manual untuk setiap fitur. | Tutorial detail untuk pendaftaran, melihat daftar, edit data, dan delete data dengan screenshot dan penjelasan setiap step. |
-| **Troubleshooting** | Solusi untuk error umum. | FAQ dengan 4 error paling sering terjadi dan cara mengatasinya: database connection error, 404 API, data tidak muncul, form tidak submit. |
-| **Pengembangan Lebih Lanjut** | Roadmap fitur future. | Checklist 9 fitur potensial untuk pengembangan: upload foto, export data, print kartu, login system, dashboard, email notifikasi, pagination, search advanced. |
 
 ---
 
