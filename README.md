@@ -397,7 +397,7 @@ Untuk melihat hasil implementasi secara langsung:
 
 ### Link Folder Proyek
 Struktur file dalam direktori *hosting* dapat dilihat pada:
-[folder7](https://www.google.com/search?q=pertemuan7/)
+Bisa dilihat pada [folder7](pertemuan7/)
 
 -----
 
@@ -651,7 +651,7 @@ Untuk melihat hasil implementasi secara langsung:
 
 ### Link Folder Proyek
 Struktur file dalam direktori *hosting* dapat dilihat pada:
-[folder9](https://www.google.com/search?q=pertemuan9/)
+Bisa dilihat pada [folder9](pertemuan9/)
 
 
 ---
