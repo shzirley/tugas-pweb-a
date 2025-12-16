@@ -356,6 +356,8 @@ Pada pertemuan ke-7 ini, kami belajar bagaimana pengimplementasian **Asynchronou
 
 -----
 
+# LAPORAN TUGAS PEMROGRAMAN WEBSITE PERTEMUAN 9
+
 ## Analisis Kode dan Implementasi Fungsi Utama
 
 Tugas ini berhasil diimplementasikan menggunakan tiga file utama yang saling berinteraksi: `index.html`, `style.css`, dan `process.php`.
@@ -408,3 +410,162 @@ Latihan ini berhasil mengimplementasikan AJAX untuk *form submission*, memberika
 1.  **Pengalaman Non-Blocking:** Dengan AJAX, pengguna tidak perlu menunggu halaman dimuat ulang. Data formulir dikirim di latar belakang, memberikan umpan balik yang cepat dan efisien.
 2.  **Efisiensi Sumber Daya:** Hanya data yang relevan yang dipertukarkan antara klien dan server, bukan seluruh halaman HTML.
 3.  **Keamanan Berlapis:** Validasi dilakukan baik di sisi klien (untuk kecepatan) maupun di sisi server (`process.php`) sebagai langkah keamanan penting untuk memastikan data yang diproses selalu valid.
+
+---
+
+# LAPORAN TUGAS PEMROGRAMAN WEBSITE PERTEMUAN 10
+
+# PUSPA: Platform E-Commerce Kustomisasi Buket Bunga & Florist Supply
+**Area Operasional:** Surabaya
+
+## 1. Deskripsi Umum
+**Puspa** adalah aplikasi web berbasis e-commerce yang dirancang untuk merevolusi pengalaman membeli bunga dengan konsep **"Hybrid Florist"**. Platform ini memberikan fleksibilitas penuh kepada pengguna melalui tiga model pembelian utama:
+
+* **Ready-to-Go:** Membeli buket yang sudah dirangkai indah.
+* **Custom Builder:** Meracik desain buket sendiri dari nol.
+* **DIY Experience:** Membeli bahan baku mentah untuk dirangkai sendiri di rumah.
+
+Berfokus pada area Surabaya, Puspa mengintegrasikan fitur kustomisasi produk mendalam dengan sistem logistik otomatis (penjadwalan jemput & kalkulasi ongkir berbasis jarak).
+
+---
+
+## 2. Fitur Utama & Logika Bisnis
+
+### A. Katalog Produk (Product & Supply)
+Sistem mengelompokkan inventaris menjadi 3 kategori utama:
+
+1.  **Fresh Flowers**
+    * Penjualan bunga satuan/per tangkai (untuk mode kustomisasi).
+    * Bunga paketan (untuk produk buket jadi).
+2.  **Florist Tools**
+    * Peralatan pendukung untuk pelanggan *DIY* (Gunting bunga, floral tape, busa/oasis, pita, dll).
+3.  **Add-ons & Gifts**
+    * Barang pelengkap non-bunga (Boneka wisuda, coklat, keychain, perhiasan).
+
+### B. Smart Wrapper System (Logika Pembungkus)
+Sistem menggunakan algoritma otomatis untuk penentuan harga kertas pembungkus (*wrapper*).
+
+**Tier Wrapper:**
+* **Basic:** Rp 8.000
+* **Premium:** Rp 11.000
+
+> **Aturan Promo (Logic Rule):**
+> * **Jika total belanja kategori Bunga $\ge$ Rp 50.000:** Opsi *Basic Wrapper* menjadi **GRATIS**.
+> * **Jika total belanja kategori Bunga < Rp 50.000:** *Basic Wrapper* dikenakan harga normal (Rp 8.000).
+> * **Premium Wrapper:** Selalu harga penuh (Rp 11.000) tanpa diskon, berapapun total belanja.
+
+### C. Custom Bouquet Builder & Services
+**Builder Mode:**
+User memilih item secara berurutan: `Pilih Bunga` $\rightarrow$ `Pilih Filler (Daun)` $\rightarrow$ `Pilih Wrapper`. Harga diperbarui secara *real-time*.
+
+**Service Options:**
+* **Assembly Service (Jasa Rangkai):** User membayar biaya jasa tambahan. Produk dikirim dalam bentuk buket jadi. Termasuk fitur input pesan untuk kartu ucapan.
+* **DIY Mode:** Tidak ada biaya jasa. Semua item dikirim dalam bentuk lepasan (*loose flowers*) agar user dapat merangkai sendiri.
+
+### D. Manajemen Logistik (Scope: Surabaya)
+**1. Self-Pickup (Ambil di Toko)**
+* **Biaya:** Gratis.
+* **Syarat:** User wajib memilih slot waktu (*Date & Time*) saat *checkout* untuk pengambilan.
+
+**2. Delivery (Kurir Instan)**
+* **Pricing:** Berbasis jarak (*Distance-based pricing*).
+* **Metode:** Integrasi Maps/Koordinat untuk menghitung jarak dari toko ke lokasi user.
+* **Rumus:**
+    $$Biaya = Jarak (km) \times Tarif per km$$
+
+---
+
+## 3. Alur Pengguna (User Flow) Singkat
+
+1.  **Homepage:** User memilih mode belanja (*Beli Buket Jadi* / *Custom Sendiri* / *Beli Alat*).
+2.  **Selection:** User memilih item (Contoh: 5 Mawar, 1 Coklat, 1 Gunting).
+3.  **System Check:** Sistem memvalidasi logika promo wrapper (Apakah total bunga mencapai Rp 50.000?).
+4.  **Checkout:**
+    * Isi kartu ucapan (jika memilih jasa rangkai).
+    * Pilih metode pengiriman (*Delivery* atau *Pickup*).
+        * *Jika Delivery:* Set lokasi pin point.
+        * *Jika Pickup:* Pilih slot waktu ambil.
+5.  **Pembayaran:**
+    * Total = Harga Produk + Jasa Rangkai (Opsional) + Ongkir (Jika delivery).
+
+---
+
+# LAPORAN TUGAS PEMROGRAMAN WEBSITE PERTEMUAN 11
+
+## Deskripsi Proyek
+Pada pertemuan ke-11 ini, kami membuat sistem manajemen laundry berbasis web bernama **LaundryCrafty** menggunakan PHP dan MySQL. Sistem ini memiliki fitur lengkap untuk mengelola pelanggan, transaksi, layanan, laporan keuangan, dan manajemen pengguna dengan interface yang modern dan responsif.
+
+### Fitur Utama:
+- Dashboard dengan statistik real-time
+- Manajemen Pelanggan (CRUD)
+- Manajemen Transaksi dengan kalkulasi otomatis
+- Paket Layanan Laundry
+- Laporan Keuangan dengan grafik Chart.js
+- Manajemen Pengguna (Admin & Kasir)
+- Role-based Access Control
+- Security dengan password hashing (bcrypt)
+
+Untuk melihat hasil dapat dilihat di bawah berikut:
+
+---
+
+## Dokumentasi
+
+### 1. Dashboard
+![Dashboard](pertemuan11/images/dashboard.jpeg)
+*Dashboard menampilkan statistik total pelanggan, transaksi hari ini, cucian diproses, dan pendapatan bulan ini*
+
+### 2. Data Pelanggan
+![Data Pelanggan](pertemuan11/images/datapelanggan.jpeg)
+*Halaman manajemen pelanggan dengan fitur tambah, edit, hapus, dan pencarian*
+
+### 3. Data Transaksi
+![Data Transaksi](pertemuan11/images/datatransaksi.jpeg)
+*Halaman transaksi dengan kalkulasi otomatis, filter status, dan update status cucian*
+
+### 4. Paket Layanan
+![Paket Layanan](pertemuan11/images/paketlayanan.jpeg)
+*Tampilan paket layanan laundry dengan harga per kilogram dan durasi pengerjaan*
+
+### 5. Laporan Keuangan
+![Laporan](pertemuan11/images/laporan.jpeg)
+*Halaman laporan dengan filter periode dan statistik keuangan*
+
+![Laporan Keuangan Detail](pertemuan11/images/laporankeuangan.jpeg)
+*Grafik pendapatan harian dan pendapatan per layanan dengan persentase*
+
+### 6. Manajemen Pengguna
+![Manajemen Pengguna](pertemuan11/images/manajemenpengguna.jpeg)
+*Halaman manajemen pengguna untuk admin mengelola akun kasir*
+
+---
+
+## Teknologi yang Digunakan
+- **Front-End**: HTML5, CSS3, JavaScript, Chart.js, Font Awesome
+- **Back-End**: PHP 8.x
+- **Database**: MySQL
+- **Server**: Apache (XAMPP untuk lokal, InfinityFree untuk hosting)
+- **Typography**: Google Fonts (Sora & Space Mono)
+
+---
+
+## Kredensial Login
+- **Admin**: 
+  - Username: `admin`
+  - Password: `password`
+- **Kasir**: 
+  - Username: `kasir1`
+  - Password: `password`
+
+---
+
+## Link Web
+Untuk melihat hasil dapat dilihat berikut:
+**http://shzirley.great-site.net/laundrycrafty/login.php**
+
+---
+
+## Link Folder
+Bisa dilihat pada [pertemuan11](pertemuan11/)
+
+---
