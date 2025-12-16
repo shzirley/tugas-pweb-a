@@ -569,3 +569,223 @@ Untuk melihat hasil dapat dilihat berikut:
 Bisa dilihat pada [pertemuan11](pertemuan11/)
 
 ---
+
+# LAPORAN TUGAS PEMROGRAMAN WEBSITE PERTEMUAN 12
+
+## Deskripsi Proyek
+Pada pertemuan ke-12 ini, kami membuat sistem manajemen data siswa berbasis web menggunakan PHP dan MySQL. Sistem ini memiliki fitur lengkap CRUD (Create, Read, Update, Delete) untuk mengelola data siswa dengan interface yang modern, minimalist, dan user-friendly.
+
+### Fitur Utama:
+- Manajemen Data Siswa (CRUD)
+- Upload & Manage Foto Siswa
+- Validasi NIS Unik
+- Interface Modern & Minimalist
+- Responsive Design
+- Notifikasi Success/Error
+- Auto-generate Avatar jika tidak ada foto
+- Anti-cache untuk update foto
+- Smooth Animations
+
+Untuk melihat hasil dapat dilihat di bawah berikut:
+
+---
+
+## Dokumentasi
+
+### 1. Dashboard - Halaman Utama
+![Dashboard](pertemuan12/images/dashboard.jpeg)
+*Halaman utama menampilkan tabel data siswa dengan foto, NIS, nama, jenis kelamin, telepon, alamat, dan tombol aksi (Ubah & Hapus)*
+
+### 2. Form Ubah Data Siswa
+![Ubah Data](pertemuan12/images/ubahdata.jpeg)
+*Form untuk mengedit data siswa dengan preview foto saat ini dan opsi untuk mengganti foto*
+
+---
+
+## Struktur Database
+
+### Tabel: `siswa`
+| Field | Type | Keterangan |
+|-------|------|------------|
+| id | INT(11) | Primary Key, Auto Increment |
+| nis | VARCHAR(20) | Nomor Induk Siswa (Unique) |
+| nama | VARCHAR(100) | Nama Lengkap Siswa |
+| jenis_kelamin | ENUM('Laki-laki', 'Perempuan') | Jenis Kelamin |
+| telepon | VARCHAR(15) | Nomor Telepon |
+| alamat | TEXT | Alamat Lengkap |
+| foto | VARCHAR(255) | Nama File Foto (Nullable) |
+| created_at | TIMESTAMP | Waktu Pembuatan Data |
+| updated_at | TIMESTAMP | Waktu Update Data |
+
+---
+
+## Struktur File
+
+```
+tugas12/
+├── images/                     # Folder untuk foto siswa
+├── index.php                   # Halaman utama (Read)
+├── koneksi.php                 # Konfigurasi database
+├── form_simpan.php             # Form tambah siswa (Create)
+├── form_ubah.php               # Form edit siswa (Update)
+├── proses_simpan.php           # Proses tambah data
+├── proses_ubah.php             # Proses update data
+├── proses_hapus.php            # Proses hapus data (Delete)
+├── setup.php                   # Setup database otomatis
+├── check_upload.php            # Debug tool upload
+├── mydatascole.sql             # File database SQL
+└── README.md                   # Dokumentasi
+```
+
+---
+
+## Fitur Teknis
+
+### 1. CRUD Operations
+- **Create**: Form tambah siswa dengan validasi dan upload foto
+- **Read**: Tabel data siswa dengan foto, sorting, dan empty state
+- **Update**: Form edit dengan preview foto lama dan opsi ganti foto
+- **Delete**: Hapus data dengan konfirmasi dan auto-delete foto
+
+### 2. Upload & Foto Management
+- Support format: JPG, PNG, GIF
+- Max size: 5MB
+- Auto-generate nama file unik
+- Auto-delete foto lama saat update/delete
+- Anti-cache dengan timestamp
+- Fallback avatar otomatis (initial nama)
+
+### 3. Validasi
+- NIS harus unik (tidak boleh duplikat)
+- Semua field required kecuali foto
+- Validasi tipe dan ukuran file
+- Server-side & client-side validation
+
+### 4. User Experience
+- Alert notifikasi success/error
+- Smooth animations & transitions
+- Loading states
+- Responsive design (mobile-friendly)
+- Clean & minimalist interface
+- Hover effects & micro-interactions
+
+### 5. Security
+- Prepared statements (mysqli_real_escape_string)
+- File upload validation
+- SQL injection prevention
+- XSS prevention (htmlspecialchars)
+- Secure file naming
+
+---
+
+## Teknologi yang Digunakan
+
+- **Front-End**: 
+  - HTML5
+  - CSS3 (Custom Styling)
+  - JavaScript (Vanilla JS)
+  - Google Fonts (Poppins)
+  - SVG Icons
+
+- **Back-End**: 
+  - PHP 7.4+
+  - MySQL/MariaDB
+
+- **Server**: 
+  - Apache (XAMPP untuk lokal)
+  - InfinityFree untuk hosting
+
+- **Tools**:
+  - phpMyAdmin untuk database management
+  - VSCode untuk development
+
+---
+
+## Konfigurasi Database
+
+```php
+define('DB_HOST', 'localhost');
+define('DB_USER', 'root');
+define('DB_PASS', '');
+define('DB_NAME', 'dc_siswa');
+define('DB_PORT', 3307);
+```
+
+---
+
+## Cara Instalasi
+
+### 1. Setup Lokal (XAMPP)
+```bash
+# Copy project ke htdocs
+D:\xampp\htdocs\tugas12\
+
+# Start Apache & MySQL di XAMPP Control Panel
+
+# Buka browser
+http://localhost/tugas12/setup.php
+
+# Klik "Mulai Setup Database"
+
+# Setelah selesai, buka aplikasi
+http://localhost/tugas12/
+```
+
+### 2. Import Database Manual
+```sql
+-- Via phpMyAdmin atau MySQL CLI
+CREATE DATABASE dc_siswa;
+USE dc_siswa;
+
+-- Import file mydatascole.sql
+```
+
+### 3. Setup Folder Images
+```bash
+# Buat folder images dengan permission write
+mkdir images
+chmod 777 images
+```
+
+---
+
+## Fitur Khusus
+
+### 1. Auto Database Setup
+File `setup.php` akan otomatis:
+- Membuat database jika belum ada
+- Membuat tabel siswa
+- Insert data contoh
+- Membuat folder images/
+- Menampilkan progress setup
+
+### 2. Debug Upload Tool
+File `check_upload.php` untuk troubleshooting:
+- Cek PHP upload configuration
+- Cek status folder images/
+- List semua foto yang sudah diupload
+- Rekomendasi fix masalah
+
+### 3. Anti-Cache Foto
+Sistem menambahkan timestamp di URL foto untuk mencegah browser cache foto lama saat update.
+
+### 4. Avatar Default
+Jika siswa tidak memiliki foto, sistem otomatis generate avatar SVG dengan initial nama (2 huruf pertama).
+
+
+---
+
+## Link Demo
+Untuk melihat hasil dapat dilihat berikut:
+**https://shzirley.great-site.net/tugas12/**
+
+---
+
+## Link Folder
+Bisa dilihat pada [pertemuan12](pertemuan12/)
+
+---
+
+## Kesimpulan
+
+Sistem CRUD Data Siswa ini berhasil diimplementasikan dengan fitur lengkap dan interface yang modern. Aplikasi ini dapat digunakan untuk mengelola data siswa di sekolah dengan mudah dan efisien. Dengan desain yang minimalist dan responsive, aplikasi ini dapat diakses dari berbagai perangkat.
