@@ -356,8 +356,6 @@ Pada pertemuan ke-7 ini, kami belajar bagaimana pengimplementasian **Asynchronou
 
 -----
 
-# LAPORAN TUGAS PEMROGRAMAN WEBSITE PERTEMUAN 9
-
 ## Analisis Kode dan Implementasi Fungsi Utama
 
 Tugas ini berhasil diimplementasikan menggunakan tiga file utama yang saling berinteraksi: `index.html`, `style.css`, dan `process.php`.
@@ -397,9 +395,8 @@ Seluruh file telah diunggah dan di-*hosting* secara *online* menggunakan platfor
 Untuk melihat hasil implementasi secara langsung:
 [https://shzirley.great-site.net/pertemuan7/](https://shzirley.great-site.net/pertemuan7/)
 
-### Link Folder Proyek
-Struktur file dalam direktori *hosting* dapat dilihat pada:
-[folder7](https://www.google.com/search?q=pertemuan7/)
+### Link Folder
+Bisa dilihat pada [folder6](pertemuan7/)
 
 -----
 
@@ -412,6 +409,19 @@ Latihan ini berhasil mengimplementasikan AJAX untuk *form submission*, memberika
 3.  **Keamanan Berlapis:** Validasi dilakukan baik di sisi klien (untuk kecepatan) maupun di sisi server (`process.php`) sebagai langkah keamanan penting untuk memastikan data yang diproses selalu valid.
 
 ---
+
+# LAPORAN TUGAS PEMROGRAMAN WEBSITE PERTEMUAN 9
+
+### Link Web Demo
+Untuk melihat hasil implementasi secara langsung:
+[https://shzirley.great-site.net/tugas9pweb/](https://shzirley.great-site.net/tugas9pweb/)
+
+### Dokumentasi
+![p9.1](screenshotpweb/formulirpendaftaran_p9.png)
+![p9.2](screenshotpweb/peserta_terdaftar_p9.png)
+
+### Link Folder
+Bisa dilihat pada [folder6](pertemuan9/)
 
 # LAPORAN TUGAS PEMROGRAMAN WEBSITE PERTEMUAN 10
 
