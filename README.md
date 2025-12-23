@@ -247,7 +247,7 @@ Tugas ini melatih mahasiswa untuk bisa kenal lebih dalam mengenai HTML dan CSS, 
 
 ### Link Web
 Untuk melihat hasil dapat dilihat berikut:
-[!pertemuan2](https://shzirley.github.io/tugas-2-pweb-a/pertemuan2.html)
+![pertemuan2](https://shzirley.github.io/tugas-2-pweb-a/pertemuan2.html)
 
 ### Link Folder
 Bisa dilihat pada [folder2](pertemuan2/)
@@ -265,7 +265,7 @@ Untuk melihat hasil dapat dilihat di bawah berikut:
 ![ss_table](https://github.com/shzirley/tugas-pweb-a/blob/main/screenshotpweb/ss_table.png?raw=true)
 
 ### b. frame
-![ss_frame0(https://github.com/shzirley/tugas-pweb-a/blob/main/screenshotpweb/ss_frame.png?raw=true)
+![ss_frame](https://github.com/shzirley/tugas-pweb-a/blob/main/screenshotpweb/ss_frame.png?raw=true)
 
 ### c. form
 ![ss_form](https://github.com/shzirley/tugas-pweb-a/blob/main/screenshotpweb/ss_form.png?raw=true)
